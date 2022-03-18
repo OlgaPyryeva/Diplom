@@ -40,7 +40,8 @@ h3 {
   display: inline-block;
 }
 .phone-icon {
-  background: url("../images/phone.png") no-repeat;
+  background: url("../images/phone.png") no-repeat; 
+ 
   display: inline-block;
   width: 22px;
   height: 21px;
