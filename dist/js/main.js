@@ -16,7 +16,27 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_request_all__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/requestСall */ \"./modules/requestСall.js\");\n\r\n\r\n(0,_modules_request_all__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_request_all__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/requestСall */ \"./modules/requestСall.js\");\n/* harmony import */ var _modules_customersBenefits__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/customersBenefits */ \"./modules/customersBenefits.js\");\n/* harmony import */ var _modules_ourServices__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/ourServices */ \"./modules/ourServices.js\");\n\r\n\r\n\r\n\r\n(0,_modules_request_all__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n(0,_modules_customersBenefits__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n(0,_modules_ourServices__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./modules/customersBenefits.js":
+/*!**************************************!*\
+  !*** ./modules/customersBenefits.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst customersBenefits = () => {\r\n  console.log(\"customersBenefits\");\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (customersBenefits);\r\n\n\n//# sourceURL=webpack:///./modules/customersBenefits.js?");
+
+/***/ }),
+
+/***/ "./modules/ourServices.js":
+/*!********************************!*\
+  !*** ./modules/ourServices.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst ourServices = () => {\r\n  console.log(\"ourServices\");\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ourServices);\r\n\n\n//# sourceURL=webpack:///./modules/ourServices.js?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst requestCall = () => {\r\n  console.log(\"requestCall\");\r\n};\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (requestCall);\r\n\n\n//# sourceURL=webpack:///./modules/request%D0%A1all.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst requestCall = () => {\r\n  // console.log(\"requestCall\");\r\n};\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (requestCall);\r\n\n\n//# sourceURL=webpack:///./modules/request%D0%A1all.js?");
 
 /***/ })
 
