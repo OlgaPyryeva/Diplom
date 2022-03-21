@@ -8,6 +8,7 @@ const swiper = () => {
         slidesPerView: 3,
       },
     },
+    loop: true,
 
     autoplay: {
       delay: 2500,
