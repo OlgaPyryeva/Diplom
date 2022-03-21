@@ -1,13 +1,14 @@
 import Swiper, { Autoplay, Navigation } from "swiper";
 
 const ourServices = () => {
-  const swiper = new Swiper(".swiper-services", {
+  const swiperServices = new Swiper(".swiper-services", {
     slidesPerView: 1,
     breakpoints: {
       576: {
         slidesPerView: 2,
       },
     },
+    loop: true,
 
     autoplay: {
       delay: 2500,
