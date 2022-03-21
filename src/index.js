@@ -1,5 +1,5 @@
 import requestCall from "./modules/requestСall";
-import customersBenefits from "./modules/customersBenefits";
+import swiper from "./modules/customersBenefits";
 import ourServices from "./modules/ourServices";
 import measurerCall from "./modules/measurerCall";
 import timer from "./modules/timer";
@@ -9,7 +9,7 @@ import scrollBtn from "./modules/scrollBtn";
 import calculatorPrice from "./modules/calculatorPrice";
 
 requestCall();
-customersBenefits();
+swiper();
 ourServices();
 measurerCall();
 timer();
