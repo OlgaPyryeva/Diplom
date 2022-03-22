@@ -17,8 +17,8 @@ const swiper = () => {
     modules: [Autoplay, Navigation],
 
     navigation: {
-      nextEl: ".benefits__arrow--left",
-      prevEl: ".benefits__arrow--right",
+      nextEl: ".benefits__arrow--right",
+      prevEl: ".benefits__arrow--left",
     },
   });
 };

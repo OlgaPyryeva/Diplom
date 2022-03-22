@@ -17,8 +17,8 @@ const ourServices = () => {
     modules: [Autoplay, Navigation],
 
     navigation: {
-      nextEl: ".services__arrow--left",
-      prevEl: ".services__arrow--right",
+      nextEl: ".services__arrow--right",
+      prevEl: ".services__arrow--left",
     },
   });
 };
