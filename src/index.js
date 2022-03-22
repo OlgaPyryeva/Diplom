@@ -12,7 +12,7 @@ requestCall();
 swiper();
 ourServices();
 measurerCall();
-timer();
+timer("1 april 2022");
 getDiscountValidation();
 sertificate();
 scrollBtn();
