@@ -5,7 +5,6 @@ const requestCall = () => {
   const requestModal = document.querySelector(".header-modal");
   const modalFone = document.querySelector(".overlay");
   const modalCloseBtn = document.querySelector(".header-modal__close");
-  console.log(requestBtn);
 
   const showModal = () => {
     requestModal.style.display = "block";
