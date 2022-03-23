@@ -13,7 +13,12 @@ swiper();
 ourServices();
 measurerCall();
 timer("1 april 2022");
-getDiscountValidation();
+getDiscountValidation({
+  formID: "form1",
+});
+getDiscountValidation({
+  formID: "form2",
+});
 sertificate();
 scrollBtn();
 calculatorPrice();
