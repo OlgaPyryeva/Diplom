@@ -1,33 +1,37 @@
 const getDiscountValidation = ({ formID }) => {
   const form = document.getElementById(formID);
   const formElements = document.querySelectorAll("input");
+  const userPhone = form.querySelector("input[name=phone]");
+  const userName = form.querySelector("input[name=fio]");
+
+  userPhone.addEventListener("input", (e) => {
+    e.target.value = e.target.value.replace(/[^\+\d]+/, "");
+  });
+
+  userName.addEventListener("input", (e) => {
+    e.target.value = e.target.value.replace(/[^a-zA-Zа-я-А-Я\s]+/, "");
+  });
 
   const validate = () => {
+    let successName = true;
+    let successPhone = true;
     let success = true;
-    const userPhone = form.querySelectorAll("input[name=phone]");
-    const userName = form.querySelectorAll("input[name=fio]");
 
     // В поле имени разрешить ввод только русских и латинских символов,
     // в поле номера телефона только символа + (плюс) и 16-и цифр максимум.
-    userPhone.forEach((phone) => {
-      phone.addEventListener("input", (e) => {
-        e.target.value = e.target.value.replace(/\D/, "");
-      });
-    });
 
-    userName.forEach((name) => {
-      name.addEventListener("input", (e) => {
-        e.target.value = e.target.value.replace(/^[a-zA-Zа-я-А-Я]+\s/, "");
-      });
-    });
-
-    if (/[а-яёА-ЯЁa-zA-Z\s]+/g.test(userName.value)) {
-      success = true;
+    if (/[а-яёА-ЯЁa-zA-Z\s]+/g.test(userName.value) && userName.value != "") {
+      successName = true;
     } else {
-      success = false;
+      successName = false;
     }
 
-    if (/[\d\+]/g.test(userPhone.value) && userPhone.value.length <= 17) {
+    if (/[\d\+]+/g.test(userPhone.value) && userPhone.value.length <= 17) {
+      successPhone = true;
+    } else {
+      successPhone = false;
+    }
+    if (successPhone && successName) {
       success = true;
     } else {
       success = false;
