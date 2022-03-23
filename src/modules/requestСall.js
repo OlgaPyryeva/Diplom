@@ -32,5 +32,6 @@ const requestCall = () => {
   });
 
   modalCloseBtn.addEventListener("click", hideModal);
+  modalFone.addEventListener("click", hideModal);
 };
 export default requestCall;
