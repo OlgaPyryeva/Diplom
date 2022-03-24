@@ -1667,6 +1667,8 @@ input.error {
   right: 25px;
   bottom: 25px;
   transform: rotate(90deg);
+  opacity: 0;
+  z-index: 999;
 }
 
 @media (min-width: 576px) {
