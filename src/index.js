@@ -25,6 +25,12 @@ getDiscountValidation({
 getDiscountValidation({
   formID: "form4",
 });
+getDiscountValidation({
+  formID: "form5",
+});
+getDiscountValidation({
+  formID: "form6",
+});
 
 sertificate();
 scrollBtn();
