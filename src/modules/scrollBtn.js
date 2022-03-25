@@ -12,7 +12,6 @@ const scrollBtn = () => {
   if (windowScrollTop > heightFirstBlock) {
     scrollBlock.style.opacity = "1";
   }
-  console.log(windowScrollTop);
 
   window.addEventListener("scroll", (e) => {
     windowScrollTop = window.scrollY;

@@ -19,6 +19,13 @@ getDiscountValidation({
 getDiscountValidation({
   formID: "form2",
 });
+getDiscountValidation({
+  formID: "form3",
+});
+getDiscountValidation({
+  formID: "form4",
+});
+
 sertificate();
 scrollBtn();
 calculatorPrice();

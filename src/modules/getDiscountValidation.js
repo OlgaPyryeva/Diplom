@@ -20,13 +20,21 @@ const getDiscountValidation = ({ formID }) => {
     // В поле имени разрешить ввод только русских и латинских символов,
     // в поле номера телефона только символа + (плюс) и 16-и цифр максимум.
 
-    if (/[а-яёА-ЯЁa-zA-Z\s]+/g.test(userName.value) && userName.value != "") {
+    if (
+      /[а-яёА-ЯЁa-zA-Z\s]+/g.test(userName.value) &&
+      userName.value != "" &&
+      userName.value.length >= 2
+    ) {
       successName = true;
     } else {
       successName = false;
     }
 
-    if (/[\d\+]+/g.test(userPhone.value) && userPhone.value.length <= 17) {
+    if (
+      /[\d\+]+/g.test(userPhone.value) &&
+      userPhone.value.length <= 17 &&
+      userPhone.value.length >= 6
+    ) {
       successPhone = true;
     } else {
       successPhone = false;
@@ -82,10 +90,11 @@ const getDiscountValidation = ({ formID }) => {
       e.preventDefault();
       if (validate()) {
         submitForm();
+        alert("данные успешно отправлены");
       } else {
         console.log("форма не отправлена");
         alert(
-          "заполните все поля, в номере телефона можно вводить + и не более 16 цифр"
+          "заполните все поля, в номере телефона можно вводить + и от 6 до 16 цифр, имя должно быть минимум 2 символа"
         );
         formElements.forEach((input) => {
           input.value = "";
