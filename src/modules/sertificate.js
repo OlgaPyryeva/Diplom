@@ -10,9 +10,10 @@ const sertificate = () => {
       e.preventDefault();
       let sertificateModal = document.createElement("div");
       sertificateModal.className = "sertificate-modal";
-      sertificateModal.style.backgroundImage = `url(${sertificateImg})`;
+      // sertificateModal.style.backgroundImage = `url(${sertificateImg})`;
       sertificateModal.style.display = "block";
       sertificateModal.innerHTML = `
+      <img src=${sertificateImg} alt="">
       <span title="Close" class="sertificate-modal__close">x</span></div>`;
 
       const documentsBlock = document.getElementById("documents");

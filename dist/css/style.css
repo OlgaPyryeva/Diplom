@@ -1690,16 +1690,27 @@ input.error {
   height: 100%;
 }
 .sertificate-modal {
-  max-height: 900px;
+  max-height: 98vh;
   height: 100%;
-  max-width: 850px;
+  max-width: 849px;
+  /* max-width: 100vh; */
   width: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  z-index: 99;
   display: none;
+  overflow: auto;
+  background-color: #003bb3;  
+}
+.sertificate-modal img{
+  
+  max-width: 849px;
+  width: 100%;
+  max-height: 1200px;
+  height: auto;
+ 
 }
 
 
@@ -1712,6 +1723,7 @@ position: absolute;
   height: 50px;
   font-size: 36px;
   cursor: pointer;
+  z-index: 101;
 }
 .sertificate-modal__close:hover {
   color: rgba(0, 0, 0, 0.35);
