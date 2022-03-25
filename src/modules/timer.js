@@ -2,10 +2,17 @@ let timeRemaining;
 let getTime;
 
 const timer = (deadline) => {
-  const timerDays = document.querySelector("div.count_1>span");
-  const timerHours = document.querySelector("div.count_2>span");
-  const timerMinutes = document.querySelector("div.count_3>span");
-  const timerSeconds = document.querySelector("div.count_4>span");
+  const form1 = document.getElementById("order_1");
+  const form2 = document.getElementById("order_2");
+  const timer1Days = form1.querySelector("div.count_1>span");
+  const timer1Hours = form1.querySelector("div.count_2>span");
+  const timer1Minutes = form1.querySelector("div.count_3>span");
+  const timer1Seconds = form1.querySelector("div.count_4>span");
+
+  const timer2Days = form2.querySelector("div.count_1>span");
+  const timer2Hours = form2.querySelector("div.count_2>span");
+  const timer2Minutes = form2.querySelector("div.count_3>span");
+  const timer2Seconds = form2.querySelector("div.count_4>span");
 
   const getTimeRemaining = () => {
     let dateStop = new Date(deadline).getTime();
@@ -35,10 +42,15 @@ const timer = (deadline) => {
   const updateClock = () => {
     getTime = getTimeRemaining();
 
-    timerDays.textContent = getTime.days;
-    timerHours.textContent = getTime.hours;
-    timerMinutes.textContent = getTime.minutes;
-    timerSeconds.textContent = getTime.seconds;
+    timer1Days.textContent = getTime.days;
+    timer1Hours.textContent = getTime.hours;
+    timer1Minutes.textContent = getTime.minutes;
+    timer1Seconds.textContent = getTime.seconds;
+
+    timer2Days.textContent = getTime.days;
+    timer2Hours.textContent = getTime.hours;
+    timer2Minutes.textContent = getTime.minutes;
+    timer2Seconds.textContent = getTime.seconds;
   };
 
   updateClock();
@@ -46,10 +58,15 @@ const timer = (deadline) => {
   if (getTime.timeRemaining > 0) {
     setInterval(updateClock, 1000);
   } else if (getTime.timeRemaining <= 0) {
-    timerDays.textContent = "00";
-    timerHours.textContent = "00";
-    timerMinutes.textContent = "00";
-    timerSeconds.textContent = "00";
+    timer1Days.textContent = "00";
+    timer1Hours.textContent = "00";
+    timer1Minutes.textContent = "00";
+    timer1Seconds.textContent = "00";
+
+    timer2Days.textContent = "00";
+    timer2Hours.textContent = "00";
+    timer2Minutes.textContent = "00";
+    timer2Seconds.textContent = "00";
   }
 };
 
