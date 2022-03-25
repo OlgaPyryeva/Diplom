@@ -4,10 +4,15 @@ const scrollBtn = () => {
   const beginPage = document.getElementById("header");
   const nav = document.getElementById("navigation");
   const firstPart = document.getElementById("offer");
-  let windowScrollTop = 0;
+  let windowScrollTop = window.scrollY;
 
   const heightFirstBlock =
     beginPage.clientHeight + nav.clientHeight + firstPart.clientHeight;
+
+  if (windowScrollTop > heightFirstBlock) {
+    scrollBlock.style.opacity = "1";
+  }
+  console.log(windowScrollTop);
 
   window.addEventListener("scroll", (e) => {
     windowScrollTop = window.scrollY;
