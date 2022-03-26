@@ -53,20 +53,22 @@ const calculatorPrice = () => {
     });
   };
 
-  calcBlock.addEventListener("input", (e) => {
-    if (
-      e.target === calcType ||
-      e.target === calcArea ||
-      e.target === calcMaterial
-    ) {
-      countCalc();
-    }
-  });
+  if (calcBlock) {
+    calcBlock.addEventListener("input", (e) => {
+      if (
+        e.target === calcType ||
+        e.target === calcArea ||
+        e.target === calcMaterial
+      ) {
+        countCalc();
+      }
+    });
 
-  // 2) В инпут с id=”calc-input” разрешить вводить только цифры
+    // 2) В инпут с id=”calc-input” разрешить вводить только цифры
 
-  calcArea.addEventListener("input", (e) => {
-    e.target.value = e.target.value.replace(/[^\d]+/, "");
-  });
+    calcArea.addEventListener("input", (e) => {
+      e.target.value = e.target.value.replace(/[^\d]+/, "");
+    });
+  }
 };
 export default calculatorPrice;

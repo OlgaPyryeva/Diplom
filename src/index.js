@@ -8,6 +8,7 @@ import sertificate from "./modules/sertificate";
 import scrollBtn from "./modules/scrollBtn";
 import calculatorPrice from "./modules/calculatorPrice";
 
+calculatorPrice();
 requestCall();
 swiper();
 ourServices();
@@ -79,4 +80,3 @@ getDiscountValidation({
 
 sertificate();
 scrollBtn();
-calculatorPrice();
