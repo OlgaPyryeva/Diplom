@@ -22,13 +22,7 @@ const calculatorPrice = () => {
     // 3) Цена рассчитывается по формуле:
     // площадь умножить на value типа балкона и умножить на value типа материала
 
-    if (calcTypeValue && calcArea.value) {
-      if (isNaN(calcMaterialValue)) {
-        calcMaterialValue = +1;
-      } else {
-        calcMaterialValue =
-          +calcMaterial.options[calcMaterial.selectedIndex].value;
-      }
+    if (calcTypeValue && calcArea.value && calcMaterialValue) {
       totalValue = calcSquareValue * calcTypeValue * calcMaterialValue;
     } else {
       totalValue = 0;

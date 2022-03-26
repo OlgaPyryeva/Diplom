@@ -1,14 +1,20 @@
-import { animate } from "./helpers";
+import { animate, scrollWidthSize } from "./helpers";
 
 const requestCall = () => {
   const requestBtn = document.querySelector("div.button > a");
   const requestModal = document.querySelector(".header-modal");
   const modalFone = document.querySelector(".overlay");
   const modalCloseBtn = document.querySelector(".header-modal__close");
+  let scrollWidth;
 
   const showModal = () => {
     requestModal.style.display = "block";
     modalFone.style.display = "block";
+    document.body.style.overflow = "hidden";
+
+    scrollWidthSize();
+    document.body.style.paddingRight = `${scrollWidth}`;
+    console.log(scrollWidth);
 
     animate({
       duration: 500,
@@ -24,6 +30,7 @@ const requestCall = () => {
   const hideModal = () => {
     requestModal.style.display = "";
     modalFone.style.display = "";
+    document.body.removeAttribute("style");
   };
 
   requestBtn.addEventListener("click", (e) => {
