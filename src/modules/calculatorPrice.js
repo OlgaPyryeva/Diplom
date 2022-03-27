@@ -1,6 +1,6 @@
 import { animate } from "./helpers";
 
-const calculatorPrice = () => {
+const calculatorPrice = (price = 1000) => {
   const calcType = document.getElementById("calc-type");
   const calcArea = document.getElementById("calc-input");
   const calcMaterial = document.getElementById("calc-type-material");
@@ -23,7 +23,7 @@ const calculatorPrice = () => {
     // площадь умножить на value типа балкона и умножить на value типа материала
 
     if (calcTypeValue && calcArea.value && calcMaterialValue) {
-      totalValue = calcSquareValue * calcTypeValue * calcMaterialValue;
+      totalValue = price * calcSquareValue * calcTypeValue * calcMaterialValue;
     } else {
       totalValue = 0;
     }

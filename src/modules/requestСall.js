@@ -24,7 +24,7 @@ const requestCall = () => {
     requestModal.style.display = "block";
     modalFone.style.display = "block";
     document.body.style.overflow = "hidden";
-    document.body.style.paddingRight = `${scrollWidth}`;
+    document.body.style.paddingRight = `${scrollWidth}px`;
 
     animate({
       duration: 500,
